@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 8]> 	<html class="no-js old"><![endif]-->
-<!--[if IE 8]> 		<html class="no-js ie8"><![endif]-->
-<!--[if IE 9]> 		<html class="no-js ie9"><![endif]-->
+<!--[if lt IE 8]>     <html class="no-js old"><![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"><![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"><![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,92 +14,92 @@
 <meta name="description" content="This calculator by FrogKnight will calculate your score for the card game Lost Cities." />
 
 <style type="text/css">
-	h1,h2 { font-weight: normal!important; }
-	@font-face {
-		font-family: 'lostcities';
-		src:url('fonts/lostcities.eot');
-		src:url('fonts/lostcities.eot') format('embedded-opentype'),
-			url('fonts/lostcities.woff') format('woff'),
-			url('fonts/lostcities.ttf') format('truetype'),
-			url('fonts/lostcities.svg') format('svg');
-		font-weight: normal;
-		font-style: normal;
-	}
-	@media screen and (-webkit-min-device-pixel-ratio:0){
-		@font-face {
-			font-family: 'lostcities';
-			src:url('fonts/lostcities.svg') format('svg');
-		}
-	}
-    
-	html { overflow-y: scroll; }
-	body { font-family: Rokkitt, sans-serif; background: #112; color: #fff; }
-	h1 { font-size: 35px; margin: 0; padding-top: 0; text-transform: uppercase; display: block; font-weight: normal!important; }
-	h2 { font-size: 35px; clear: both; margin: -40px 0 8px; padding-right: 10px; background-color: #112; float: left; clear: left; }
-	body > section > div { width: 645px; margin: 0 auto; /*padding: 0 5px;*/ position: relative; /*background: rgba(35,35,35,0.2);*/ }
-	section ul { margin: 0; padding: 0; list-style-type: none; display: block; clear: both; }
-	section ul:before,
-	section ul:after { content: ''; display: block; clear: both; width: 100%; font-weight: normal; }
-	section ul li { margin: 0; margin-right: 6px; padding: 0; /*display: inline-block;*/ display: block; float: left; font-size: 44px; padding: 12px; background-color: #112; border: 1px solid #334; cursor: pointer; font-weight: normal;
-	  -webkit-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  -o-user-select: none;
-	  user-select: none;
-	}
-	section ul li:last-child { margin-right: 0; padding: 12px 7px; }
-	section ul li:hover { background-color: #001; }
-	section ul li.selected { color: #000; }
-	section section { margin: 15px 0; padding: 15px 0; border-top: 2px solid #334; }
-	section:not(.expedition) { margin-bottom: 0; margin-top: 0; padding-bottom: 0; }
-	.expedition.red { margin-bottom: 3px; }
+    h1,h2 { font-weight: normal!important; }
+    @font-face {
+        font-family: 'lostcities';
+        src:url('fonts/lostcities.eot');
+        src:url('fonts/lostcities.eot') format('embedded-opentype'),
+            url('fonts/lostcities.woff') format('woff'),
+            url('fonts/lostcities.ttf') format('truetype'),
+            url('fonts/lostcities.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:0){
+        @font-face {
+            font-family: 'lostcities';
+            src:url('fonts/lostcities.svg') format('svg');
+        }
+    }
 
-	section.info { padding-bottom: 15px; border-top: 0; margin-top: -2px; font-weight: normal; }
-	p { line-height: 22px; }
+    html { overflow-y: scroll; }
+    body { font-family: Rokkitt, sans-serif; background: #112; color: #fff; }
+    h1 { font-size: 35px; margin: 0; padding-top: 0; text-transform: uppercase; display: block; font-weight: normal!important; }
+    h2 { font-size: 35px; clear: both; margin: -40px 0 8px; padding-right: 10px; background-color: #112; float: left; clear: left; }
+    body > section > div { width: 645px; margin: 0 auto; /*padding: 0 5px;*/ position: relative; /*background: rgba(35,35,35,0.2);*/ }
+    section ul { margin: 0; padding: 0; list-style-type: none; display: block; clear: both; }
+    section ul:before,
+    section ul:after { content: ''; display: block; clear: both; width: 100%; font-weight: normal; }
+    section ul li { margin: 0; margin-right: 6px; padding: 0; /*display: inline-block;*/ display: block; float: left; font-size: 44px; padding: 12px; background-color: #112; border: 1px solid #334; cursor: pointer; font-weight: normal;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    section ul li:last-child { margin-right: 0; padding: 12px 7px; }
+    section ul li:hover { background-color: #001; }
+    section ul li.selected { color: #000; }
+    section section { margin: 15px 0; padding: 15px 0; border-top: 2px solid #334; }
+    section:not(.expedition) { margin-bottom: 0; margin-top: 0; padding-bottom: 0; }
+    .expedition.red { margin-bottom: 3px; }
 
-	.yellow { color: #DFC242; border-top-color: #DFC242;  /*background: url('images/bg-exp-egypt.jpg') 0 0 no-repeat;*/ }
-	.yellow li:hover { border: 1px solid #DFC242; }
-	.yellow .selected { border-color: #DFC242; background-color: #DFC242; background: url('images/bg-yellow-tint.jpg') 0 0 no-repeat; }
-	.blue { color: #6EAEDC; border-top-color: #6EAEDC;  /*background: url('images/bg-exp-atlantis.jpg') 0 0 no-repeat;*/ }
-	.blue li:hover { border: 1px solid #6EAEDC; }
-	.blue .selected { border-color: #6EAEDC; background-color: #6EAEDC; background: url('images/bg-blue-tint.jpg') 0 0 no-repeat; }
-	.white { color: #ffffff; border-top-color: #ffffff; /*background: url('images/bg-exp-hymalaya.jpg') 0 0 no-repeat; */ }
-	.white li:hover { border: 1px solid #ffffff; }
-	.white .selected { border-color: #ffffff; background-color: #ffffff; background: url('images/bg-white-tint.jpg') 0 0 no-repeat; }
-	.green { color: #97B44A; border-top-color: #97B44A;  /*background: url('images/bg-exp-jungle.jpg') 0 0 no-repeat;*/ }
-	.green li:hover { border: 1px solid #97B44A; }
-	.green .selected { border-color: #97B44A; background-color: #97B44A; background: url('images/bg-green-tint.jpg') 0 0 no-repeat; }
-	.red { color: #DA3812; border-top-color: #DA3812;  /*background: url('images/bg-exp-volcanoes.jpg') 0 0 no-repeat;*/ }
-	.red li:hover { border: 1px solid #DA3812; }
-	.red .selected { border-color: #DA3812; background-color: #DA3812; background: url('images/bg-red-tint.jpg') 0 0 no-repeat; }
+    section.info { padding-bottom: 15px; border-top: 0; margin-top: -2px; font-weight: normal; }
+    p { line-height: 22px; }
 
-	.investment { width: 21px; height: 46px; overflow: hidden; font-weight: normal; }
-	.investment:before { display: block; font-weight: normal; content: '\e600'; font-family: 'lostcities'; font-size: 55px; position: relative; left: -18px; top: -5px;}
+    .yellow { color: #DFC242; border-top-color: #DFC242;  /*background: url('images/bg-exp-egypt.jpg') 0 0 no-repeat;*/ }
+    .yellow li:hover { border: 1px solid #DFC242; }
+    .yellow .selected { border-color: #DFC242; background-color: #DFC242; background: url('images/bg-yellow-tint.jpg') 0 0 no-repeat; }
+    .blue { color: #6EAEDC; border-top-color: #6EAEDC;  /*background: url('images/bg-exp-atlantis.jpg') 0 0 no-repeat;*/ }
+    .blue li:hover { border: 1px solid #6EAEDC; }
+    .blue .selected { border-color: #6EAEDC; background-color: #6EAEDC; background: url('images/bg-blue-tint.jpg') 0 0 no-repeat; }
+    .white { color: #ffffff; border-top-color: #ffffff; /*background: url('images/bg-exp-hymalaya.jpg') 0 0 no-repeat; */ }
+    .white li:hover { border: 1px solid #ffffff; }
+    .white .selected { border-color: #ffffff; background-color: #ffffff; background: url('images/bg-white-tint.jpg') 0 0 no-repeat; }
+    .green { color: #97B44A; border-top-color: #97B44A;  /*background: url('images/bg-exp-jungle.jpg') 0 0 no-repeat;*/ }
+    .green li:hover { border: 1px solid #97B44A; }
+    .green .selected { border-color: #97B44A; background-color: #97B44A; background: url('images/bg-green-tint.jpg') 0 0 no-repeat; }
+    .red { color: #DA3812; border-top-color: #DA3812;  /*background: url('images/bg-exp-volcanoes.jpg') 0 0 no-repeat;*/ }
+    .red li:hover { border: 1px solid #DA3812; }
+    .red .selected { border-color: #DA3812; background-color: #DA3812; background: url('images/bg-red-tint.jpg') 0 0 no-repeat; }
 
-	.btn { font-size: 25px; padding: 15px 22px; clear: both; display: inline-block; text-decoration: none; background-color: #112; color: #fff; margin: 0 8px 0 0; border: 1px solid #334; }
-	.btn:hover { background-color: #001; color: #97B44A; border-color: #97B44A; }
+    .investment { width: 21px; height: 46px; overflow: hidden; font-weight: normal; }
+    .investment:before { display: block; font-weight: normal; content: '\e600'; font-family: 'lostcities'; font-size: 55px; position: relative; left: -18px; top: -5px;}
 
-	.reset { opacity: 1; }
-	.btn:before { display: inline-block; font-family: 'lostcities'; position: relative; left: -8px; top: 4px; }
-	.score:before { content: '\e602'; }
-	.reset:before { content: '\e605'; }
-	.show-details:before { content: '\e60f'; }
-	.show-details { clear: both; }
-	.details-block { display: none; clear: both; margin-top: 15px!important; }
-	.details-block table { width: 100%; border-spacing: 0; }
-	.details-block table thead { display: table-row-group; }
-	.details-block table th { font-size: 24px; padding: 3px 6px; text-align: left; text-transform: uppercase; border-bottom: 1px solid #334; }
-	.details-block table td { font-size: 30px; padding: 3px 6px; border-top: 1px solid #334; }
-	.details-block + section { border-top: none; margin-top: 0; }
+    .btn { font-size: 25px; padding: 15px 22px; clear: both; display: inline-block; text-decoration: none; background-color: #112; color: #fff; margin: 0 8px 0 0; border: 1px solid #334; }
+    .btn:hover { background-color: #001; color: #97B44A; border-color: #97B44A; }
 
-	.totalscore div { font-size: 24px; }
-	.totalscore span { font-size: 165px; color: #97B44A; }
-	.totalscore span.negative { color: red; }
+    .reset { opacity: 1; }
+    .btn:before { display: inline-block; font-family: 'lostcities'; position: relative; left: -8px; top: 4px; }
+    .score:before { content: '\e602'; }
+    .reset:before { content: '\e605'; }
+    .show-details:before { content: '\e60f'; }
+    .show-details { clear: both; }
+    .details-block { display: none; clear: both; margin-top: 15px!important; }
+    .details-block table { width: 100%; border-spacing: 0; }
+    .details-block table thead { display: table-row-group; }
+    .details-block table th { font-size: 24px; padding: 3px 6px; text-align: left; text-transform: uppercase; border-bottom: 1px solid #334; }
+    .details-block table td { font-size: 30px; padding: 3px 6px; border-top: 1px solid #334; }
+    .details-block + section { border-top: none; margin-top: 0; }
 
-	footer { padding: 10px 0; }
-	footer small { display: block; text-align: center; }
-	footer small a { color: #445; text-decoration: none; }
-	footer small a:hover { color: #fff; }
+    .totalscore div { font-size: 24px; }
+    .totalscore span { font-size: 48px; color: #97B44A; }
+    .totalscore span.negative { color: red; }
+
+    footer { padding: 10px 0; }
+    footer small { display: block; text-align: center; }
+    footer small a { color: #445; text-decoration: none; }
+    footer small a:hover { color: #fff; }
 </style>
 
 <script src="js/jquery.1.10.2.min.js"></script>
@@ -110,317 +110,292 @@
 <body>
 
 <section>
-	<div>
-		<section class="info">
-			<h1>Lost Cities Score Calculator</h1>
-		</section>
-		<section class="expedition yellow" data-color="yellow" data-expedition="desert">
-			<h2>Egyptian Desert</h2>
-			<ul>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-			</ul>
-		</section>
-		<section class="expedition blue" data-color="blue" data-expedition="atlantis">
-			<h2>Atlantis</h2>
-			<ul>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-			</ul>
-		</section>
-		<section class="expedition white" data-color="white" data-expedition="himalayas">
-			<h2>Himalaya Mountains</h2>
-			<ul>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-			</ul>
-		</section>
-		<section class="expedition green" data-color="green" data-expedition="rainforest">
-			<h2>Rain Forest</h2>
-			<ul>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-			</ul>
-		</section>
-		<section class="expedition red" data-color="red" data-expedition="ancient-volcanoes">
-			<h2>Ancient Volcanoes</h2>
-			<ul>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li class="investment"></li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-			</ul>
-		</section>
-		<section>
-			<a href="#" class="btn show-details">Show Score Details</a>
-			<a href="#" class="btn reset">Reset</a>
-		</section>
-
-		<section class="details-block">
-			<div>
-				<table>
-					<thead>
-						<tr>
-							<th>Expedition</th>
-							<th>Sum</th>
-							<th>Cost</th>
-							<th>Total</th>
-							<th>Bonus</th>
-							<th>Final</th>
-						</tr>
-					</thead>
-					<tbody>
-					</tbody>
-				</table>
-			</div>
-		</section>
-		<section>
-			<div class="totalscore"><div>Your Score</div><span></span></div>
-		</section>
-	</div>
+    <div>
+        <section class="info">
+            <h1>Lost Cities Score Calculator</h1>
+        </section>
+        <section class="expedition yellow" data-color="yellow" data-expedition="desert">
+            <h2>Egyptian Desert</h2>
+            <ul>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </section>
+        <section class="expedition blue" data-color="blue" data-expedition="atlantis">
+            <h2>Atlantis</h2>
+            <ul>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </section>
+        <section class="expedition white" data-color="white" data-expedition="himalayas">
+            <h2>Himalaya Mountains</h2>
+            <ul>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </section>
+        <section class="expedition green" data-color="green" data-expedition="rainforest">
+            <h2>Rain Forest</h2>
+            <ul>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </section>
+        <section class="expedition red" data-color="red" data-expedition="ancient-volcanoes">
+            <h2>Ancient Volcanoes</h2>
+            <ul>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li class="investment"></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </section>
+        <section>
+            <div class="totalscore"><div>Score:</div><span>0</span></div>
+            <a href="#" class="btn show-details">Show Score Details</a>
+            <a href="#" class="btn reset">Reset</a>
+        </section>
+        <section class="details-block">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expedition</th>
+                            <th>Sum</th>
+                            <th>Cost</th>
+                            <th>Total</th>
+                            <th>Bonus</th>
+                            <th>Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
 </section>
 
 <script>
 
 $(function(){
 
-	// Init fastclick
-	FastClick.attach(document.body);
+    // Init fastclick
+    FastClick.attach(document.body);
 
-	var change     		= false,
-		$showDetails    = $('.show-details'),
-		Score           = {};
+    var $showDetails    = $('.show-details'),
+        Score           = {};
 
-	// offset bg position
-	$('.expedition').each(function(i){
-		$(this).find('li').each(function(i){
-			var pos = (i*35)*-1;
-			$(this).css('background-position', pos);
-		})
-	});
+    // offset bg position
+    $('.expedition').each(function(i){
+        $(this).find('li').each(function(i){
+            var pos = (i*35)*-1;
+            $(this).css('background-position', pos);
+        })
+    });
 
-	// background preloader
-	$.preloadImages = function() {
-	  for (var i = 0; i < arguments.length; i++) {
-	    $("<img />").attr("src", arguments[i]);
-	  }
-	}
-	$.preloadImages('images/bg-yellow-tint.jpg','images/bg-blue-tint.jpg','images/bg-green-tint.jpg','images/bg-white-tint.jpg','images/bg-red-tint.jpg');
+    // background preloader
+    $.preloadImages = function() {
+      for (var i = 0; i < arguments.length; i++) {
+        $("<img />").attr("src", arguments[i]);
+      }
+    }
+    $.preloadImages('images/bg-yellow-tint.jpg','images/bg-blue-tint.jpg','images/bg-green-tint.jpg','images/bg-white-tint.jpg','images/bg-red-tint.jpg');
 
-	function updateScore(){
-		var Score = {
-			grandtotal : 0,
-			allScores : {
-				yellow : {
-					sum   : 0,
-					total : 0,
-					bonus : 0,
-					score : 0
-				},
-				blue   : {
-					sum   : 0,
-					total : 0,
-					bonus : 0,
-					score : 0
-				},
-				white  : {
-					sum   : 0,
-					total : 0,
-					bonus : 0,
-					score : 0
-				},
-				green  : {
-					sum   : 0,
-					total : 0,
-					bonus : 0,
-					score : 0
-				},
-				red    : {
-					sum   : 0,
-					total : 0,
-					bonus : 0,
-					score : 0
-				}
-			}
-		// reset : function(){
+    function updateScore(){
+        var Score = {
+            grandtotal : 0,
+            allScores : {
+                yellow : {
+                    sum   : 0,
+                    total : 0,
+                    bonus : 0,
+                    score : 0
+                },
+                blue   : {
+                    sum   : 0,
+                    total : 0,
+                    bonus : 0,
+                    score : 0
+                },
+                white  : {
+                    sum   : 0,
+                    total : 0,
+                    bonus : 0,
+                    score : 0
+                },
+                green  : {
+                    sum   : 0,
+                    total : 0,
+                    bonus : 0,
+                    score : 0
+                },
+                red    : {
+                    sum   : 0,
+                    total : 0,
+                    bonus : 0,
+                    score : 0
+                }
+            }
+        // reset : function(){
 
-		// 	this.grandtotal = 0;
-		// 	$.each(this.allScores, function(k,v){
-		// 		$.each(v, function(k,v){
-		// 			// v = 0;
-		// 			console.log(k+' : '+v);
-		// 		});
-		// 	});
-		// }
-		}
+        //     this.grandtotal = 0;
+        //     $.each(this.allScores, function(k,v){
+        //         $.each(v, function(k,v){
+        //             // v = 0;
+        //             console.log(k+' : '+v);
+        //         });
+        //     });
+        // }
+        }
 
-		// reset score info if clicked twice
+        // reset score info if clicked twice
 
-		$('.totalscore span').html('');
-		$('.details-block').find('tbody').html('');
+        $('.totalscore span').html('');
+        $('.details-block').find('tbody').html('');
 
-		$('.expedition').each(function(e){
-			var $el = $(this),
-				numCards = $el.find('.selected').length;
+        $('.expedition').each(function(e){
+            var $el = $(this),
+                numCards = $el.find('.selected').length;
 
-			// as long as there are items selected
-			if ( numCards ){
+            // as long as there are items selected
+            if ( numCards ){
 
-				var color = $el.data('color'),
-					exp   = $el.data('expedition').replace('-',' '),
-					exp   = exp.charAt(0).toUpperCase() + exp.substring(1),
-					numMultipliers = $el.find('.investment.selected').length + 1;
+                var color = $el.data('color'),
+                    exp   = $el.data('expedition').replace('-',' '),
+                    exp   = exp.charAt(0).toUpperCase() + exp.substring(1),
+                    numMultipliers = $el.find('.investment.selected').length + 1;
 
-				// find sum
-				$el.find('.selected:not(.investment)').each(function(){
-					Score.allScores[color]['sum'] += Number($(this).html());
-				});
+                // find sum
+                $el.find('.selected:not(.investment)').each(function(){
+                    Score.allScores[color]['sum'] += Number($(this).html());
+                });
 
-				// sub expedition cost
-				Score.allScores[color]['total'] = (Score.allScores[color]['sum'] - 20);
+                // sub expedition cost
+                Score.allScores[color]['total'] = (Score.allScores[color]['sum'] - 20);
 
-				// expedition bonus
-				if ( numCards >= 8 ){ Score.allScores[color]['bonus'] = 20; }
+                // expedition bonus
+                if ( numCards >= 8 ){ Score.allScores[color]['bonus'] = 20; }
 
-				// calc score
-				Score.allScores[color]['score'] = (Score.allScores[color]['total'] * numMultipliers) + Score.allScores[color]['bonus'];
+                // calc score
+                Score.allScores[color]['score'] = (Score.allScores[color]['total'] * numMultipliers) + Score.allScores[color]['bonus'];
 
-				// populate details table
-				$('.details-block').find('tbody').append('<tr class="'+color+'"><td>'+exp+'</td><td>'+Score.allScores[color]['sum']+'</td><td>-20</td><td>'+Score.allScores[color]['total']+'</td><td>'+Score.allScores[color]['bonus']+'</td><td>'+Score.allScores[color]['score']+'</td></tr>');
+                // populate details table
+                $('.details-block').find('tbody').append('<tr class="'+color+'"><td>'+exp+'</td><td>'+Score.allScores[color]['sum']+'</td><td>-20</td><td>'+Score.allScores[color]['total']+'</td><td>'+Score.allScores[color]['bonus']+'</td><td>'+Score.allScores[color]['score']+'</td></tr>');
 
-			}
-		});
+            }
+        });
 
-		Score.grandtotal = 0;
-		for ( n in Score.allScores ){
-			Score.grandtotal += Score.allScores[n]['score'];
-		}
+        Score.grandtotal = 0;
+        for (n in Score.allScores) {
+            Score.grandtotal += Score.allScores[n]['score'];
+        }
+        $('.details-block')
+            .find('tbody')
+            .append('<tr><td>Total</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>'+Score.grandtotal+'</td></tr>');
 
-		$('.details-block').find('tbody').append('<tr><td>Total</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>'+Score.grandtotal+'</td></tr>');
+        // add negative class
+        if(Score.grandtotal < 0 ){ $('.totalscore span').addClass('negative'); } else { $('.totalscore span').removeClass('negative'); }
 
-		// add negative class
-		if(Score.grandtotal < 0 ){ $('.totalscore span').addClass('negative'); } else { $('.totalscore span').removeClass('negative'); }
+        // update total score
+        $('.totalscore span').html(Score.grandtotal);
+    }
 
-		// update total score
-		$('.totalscore span').html(Score.grandtotal);
-	}
+    // dont show info
+    if ($.cookie('no_info')){
+        $('.info div').hide();
+    }
 
-	// dont show info
-	if ($.cookie('no_info')){
-		$('.info div').hide();
-	}
-    
-	// item click handler
-	$('body').on('click','section ul li',function(e){
-		$el = $(this);
+    // item click handler
+    $('body').on('click','section ul li',function(e){
+        $el = $(this);
 
-		if($el.hasClass('selected')){
+        if($el.hasClass('selected')){
+            $el.removeClass('selected');
+        } else {
+            $el.addClass('selected');
+        }
+        updateScore();
+    });
 
-			if(isInvestment && $el.index() < 2 ){
-				var investments = $el.parent().find('.investment.selected'),
-					numInv = investments.length;
+    // reset click
+    $('.reset').on('click',function(e){
+        e.preventDefault();
 
-				switch(true){
-					case (numInv === 3):
-						investments.eq(2).removeClass('selected');
-						break;
-					case (numInv < 3) :
-						$el.remove();
-						break;
-				}
-			} else {
-				$el.removeClass('selected');
-			}
-		} else {
-			$el.addClass('selected');
-		}
-		change = true;
-		updateScore();
-	});
+        // Score.reset();
+        $('section ul li').removeClass('selected');
+        $('.totalscore span').html('0');
+        if ($showDetails.hasClass('open')){
+            $('.details-block').slideUp();
+            $showDetails.html('Show Score Details').removeClass('open');
+        }
 
-	// reset click
-	$('.reset').on('click',function(e){
-		e.preventDefault();
+    });
 
-		// Score.reset();
-		$('section ul li').removeClass('selected');
-		$('.expedition').each(function(e){
-			var investments = $(this).find('.investment');
-			if (investments.length > 1){
-				$(this).find('.investment').slice(1,3).remove();
-			}
-		});
-		$('.totalscore span').html('');
-		if ($showDetails.hasClass('open')){
-			$('.details-block').slideUp();
-			$showDetails.html('Show Score Details').removeClass('open');
-		}
-
-	});
-
-	// details click toggle
-	$showDetails.on('click',function(e){
-		e.preventDefault();
-		var $el = $(this);
-		if ($el.css('opacity') == 1){
-			if ($el.hasClass('open')){
-				$('.details-block').slideUp();
-				$el.html('Show Score Details').removeClass('open');
-			} else {
-				$('.details-block').slideDown();
-				$el.html('Hide Score Details').addClass('open');
-				$('body,html').animate({ scrollTop : $('.score').offset().top });
-			}
-		}
-	});
+    // details click toggle
+    $showDetails.on('click',function(e){
+        e.preventDefault();
+        var $el = $(this);
+        if ($el.css('opacity') == 1){
+            if ($el.hasClass('open')){
+                $('.details-block').slideUp();
+                $el.html('Show Score Details').removeClass('open');
+            } else {
+                $('.details-block').slideDown();
+                $el.html('Hide Score Details').addClass('open');
+                $('body,html').animate({ scrollTop : $('.score').offset().top });
+            }
+        }
+    });
 
 });
 
